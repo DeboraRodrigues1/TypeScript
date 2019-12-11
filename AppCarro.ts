@@ -1,13 +1,19 @@
-import { Carro } from "./Carro";
+import {Carro} from "./Carro";
 
-var c1: Carro; // aqui apenas declarei uma "referencia" a um carro, preciso citar o objeto
-c1: new Carro(); // agora sim, aloquei (reservei) memoria para armazenar as coisas
+let c1: Carro; //aqui apenas declarei uma "referência" a um carro, preciso criar o objeto
+c1 = new Carro();  
 
-//vamos preencher  os dados
-c1.ano    = 1968;
-c1.modelo = "fuscao";
-c1.placa  = "ABC1234";
+c1. ano = 1968;
+c1.modelo = "Fuscao Neuvoso";
+c1. placa = "ABC1234";
 
-// vamos manipular o carro com suas operações 
 c1.andar();
 c1.parar();
+
+console.log(c1.modelo);
+c1.setAno(-1968);
+
+//c1.modelo = "fusca"
+//c1.setModelo("fusca");
+
+//console.log(c1.getModelo());
